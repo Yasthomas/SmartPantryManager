@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Recipe detail: one ingredient row built in code (RecipeDetailActivity.bind). -->
+    <dimen name="detail_row_text_size">16sp</dimen>
+    <dimen name="detail_row_vertical_padding">8dp</dimen>
+
+</resources>
