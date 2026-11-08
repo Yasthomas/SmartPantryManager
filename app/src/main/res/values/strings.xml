@@ -1,3 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SmartPantryManager</string>
+    <string name="app_name">Smart Pantry Manager</string>
+
+    <!-- Screen titles -->
+    <string name="title_pantry">My Pantry</string>
+    <string name="title_add_item">Add Ingredient</string>
+    <string name="title_edit_item">Edit Ingredient</string>
+    <string name="title_suggested">Suggested Recipes</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_pantry">Pantry</string>
+    <string name="nav_suggestions">Suggestions</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Pantry list -->
+    <string name="empty_pantry">Your pantry is empty. Tap + to add your first ingredient.</string>
+    <string name="item_quantity_line">%1$s %2$s</string>
+    <string name="no_expiry">No expiry date</string>
+    <string name="badge_expired">Expired</string>
+    <string name="badge_expiring_soon">Expiring in %1$d day(s)</string>
+    <string name="action_add_desc">Add ingredient</string>
+    <string name="action_edit_desc">Edit %1$s</string>
+    <string name="action_delete_desc">Delete %1$s</string>
+    <string name="confirm_delete_item">Delete %1$s?</string>
+
+    <!-- Add / edit ingredient -->
+    <string name="field_name">Ingredient name</string>
+    <string name="field_quantity">Quantity</string>
+    <string name="field_unit">Unit</string>
+    <string name="hint_name">e.g. tomatoes</string>
+    <string name="hint_quantity">e.g. 200</string>
+    <string name="hint_unit">e.g. g</string>
+    <string name="action_pick_expiry">Expiry date (optional)</string>
+    <string name="expiry_value_desc">Expiry date: %1$s</string>
+    <string name="action_clear_expiry">Clear</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_name_too_long">Name must be %1$d characters or fewer</string>
+    <string name="error_quantity_invalid">Enter a valid number</string>
+    <string name="error_quantity_positive">Quantity must be greater than 0</string>
+    <string name="error_unit_required">Unit is required</string>
+    <string name="error_unit_invalid">Choose a unit from the list (g, kg, ml, tsp, pcs)</string>
+    <string name="error_threshold_range">Enter a number between %1$d and %2$d</string>
+
+    <!-- Suggested recipes -->
+    <string name="empty_suggestions">No recipes match your pantry yet - add more ingredients.</string>
+    <string name="almost_header">Almost There (missing 1 ingredient)</string>
+    <string name="recipe_all_available">%1$d ingredients — all available</string>
+    <string name="recipe_missing_one">Missing: %1$s</string>
+    <string name="recipe_row_desc">Open recipe %1$s</string>
+
+    <!-- Recipe detail -->
+    <string name="ingredient_row">%1$s %2$s %3$s</string>
+    <string name="step_row">%1$d. %2$s</string>
+    <string name="ingredients_header">Ingredients</string>
+    <string name="preparation_header">Preparation</string>
+    <string name="no_steps">No preparation steps listed.</string>
+    <plurals name="ingredient_count">
+        <item quantity="one">%1$d ingredient</item>
+        <item quantity="other">%1$d ingredients</item>
+    </plurals>
+
+    <!-- Settings -->
+    <string name="settings_alerts_title">Expiring-soon alerts</string>
+    <string name="settings_alerts_summary">Show an expiry badge on pantry items</string>
+    <string name="settings_threshold_title">Expiring-soon threshold (days)</string>
+    <string name="settings_threshold_hint">1 to 30</string>
+    <string name="settings_delete_all_summary">Remove every ingredient from your pantry</string>
+    <string name="confirm_delete_all_title">Delete all pantry items?</string>
+    <string name="confirm_delete_all_message">This permanently removes every ingredient in your pantry. This cannot be undone.</string>
+
+    <!-- Buttons -->
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_delete_all">Delete all pantry items</string>
+    <string name="button_cancel">Cancel</string>
+
+    <!-- Toasts -->
+    <string name="toast_item_added">Ingredient added</string>
+    <string name="toast_item_updated">Ingredient updated</string>
+    <string name="toast_item_deleted">Ingredient deleted</string>
+    <string name="toast_item_not_found">That ingredient no longer exists.</string>
+    <string name="toast_recipe_not_found">Recipe not found.</string>
+    <string name="toast_pantry_cleared">Pantry cleared</string>
+
+    <!-- Unit suggestions: free text is still allowed, these only speed up entry -->
+    <string-array name="unit_suggestions">
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>tsp</item>
+        <item>tbsp</item>
+        <item>cup</item>
+        <item>pcs</item>
+        <item>clove</item>
+        <item>slice</item>
+        <item>can</item>
+        <item>pinch</item>
+    </string-array>
 </resources>

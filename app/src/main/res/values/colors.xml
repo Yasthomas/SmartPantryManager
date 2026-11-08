@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <!-- Food / pantry green palette -->
+    <color name="primary">#2E7D32</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="primary_container">#C8E6C9</color>
+    <color name="secondary">#7CB342</color>
+    <color name="tertiary">#F9A825</color>
+    <color name="error">#B3261E</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#F6FBF4</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="on_surface">#1B1B1B</color>
+    <color name="muted_text">#5F6368</color>
+
+    <!-- Expiry badges: solid backgrounds with text that reads on either theme -->
+    <color name="badge_expired_bg">#C62828</color>
+    <color name="badge_expired_text">#FFFFFFFF</color>
+    <color name="badge_expiring_bg">#F9A825</color>
+    <color name="badge_expiring_text">#3E2723</color>
 </resources>
