@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        No permissions at all: the app is offline by design. It needs no INTERNET access,
+        and there is deliberately no location/mapping code or permission anywhere — the
+        scope is strictly the user's own pantry and recipe matching.
+    -->
 
     <application
+        android:name=".PantryApp"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPantryManager">
+
+        <!-- Screen 1: pantry list (launcher). -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Screen 2: add / edit ingredient. -->
+        <activity
+            android:name=".ui.AddEditItemActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Screen 3: suggested recipes. -->
+        <activity
+            android:name=".ui.SuggestedRecipesActivity"
+            android:exported="false" />
+
+        <!-- Screen 4: recipe detail (no bottom navigation). -->
+        <activity
+            android:name=".ui.RecipeDetailActivity"
+            android:exported="false" />
+
+        <!-- Screen 5: settings. -->
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
